@@ -15,31 +15,28 @@ export function ColourSwitcher() {
     <button
       onClick={() => setIsDark(!isDark)}
       aria-label="Toggle dark/light mode"
-      className="
+      className={`
         fixed top-4 right-4 z-50
         inline-flex items-center gap-1
-        bg-[var(--bg-secondary)] border border-[var(--border-color)]
+        button-border
         rounded-full p-1 backdrop-blur-sm
-        transition-transform duration-200 hover:scale-105
-      "
+      `}
     >
-      {/* Moon icon – always blue; gets red ring when active */}
       <span
         className={`
           p-2 rounded-full transition-colors
-          text-blue-500
-          ${isDark ? 'bg-red-500/25 border-2 border-red-500' : ''}
+          text-[var(--color-blue-500)]
+          ${isDark ? 'border-2 border-[var(--color-blue-500)]' : ''}
         `}
       >
         <FaMoon />
       </span>
 
-      {/* Sun icon – always yellow; gets red ring when active */}
       <span
         className={`
           p-2 rounded-full transition-colors
-          text-yellow-400
-          ${!isDark ? 'bg-red-500/25 border-2 border-red-500' : ''}
+          text-[var(--color-gold-400)]
+          ${!isDark ? ' border-2 border-[var(--color-gold-400)]' : ''}
         `}
       >
         <FaSun />
