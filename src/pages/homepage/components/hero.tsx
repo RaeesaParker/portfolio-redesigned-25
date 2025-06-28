@@ -1,7 +1,7 @@
 export const Hero = ({ onEnterUniverse }: { onEnterUniverse: () => void }) => {
   return (
-    <div className="flex justify-center align-middle text-center">
-      <div className="flex flex-col justify-between w-1/2 h-dvh">
+    <div className="flex justify-center align-middle text-center h-dvh">
+      <div className="flex flex-col justify-between w-1/2">
         <div className="flex flex-col justify-center align-middle gap-4 my-auto">
           <h1>Hello, I'm Raeesa</h1>
           <h2>
@@ -13,6 +13,7 @@ export const Hero = ({ onEnterUniverse }: { onEnterUniverse: () => void }) => {
                   stroke="currentColor"
                   strokeWidth="2"
                   fill="none"
+                  color="var(--color-gold-500)"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
