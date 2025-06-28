@@ -1,14 +1,18 @@
 import React from 'react';
 import AboutImage from '../assets/about.png';
+import { useNavigate } from 'react-router-dom';
+
 export const About = ({
   aboutRef,
 }: {
   aboutRef: React.RefObject<HTMLDivElement | null>;
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div
       ref={aboutRef}
-      className="flex flex-row md:flex-row items-center justify-center w-full min-h-[60vh] px-8 py-16 gap-8"
+      className="flex flex-row md:flex-row items-center justify-center w-full  h-dvh px-8 py-16 gap-8"
     >
       <div className="flex-1 flex flex-col items-start justify-center max-w-xl gap-5">
         <h2 className="mb-2 ">About me</h2>
@@ -25,6 +29,15 @@ export const About = ({
           </span>{' '}
           building all sorts of wonderful things across web, mobile, AR, and VR.
         </p>
+
+        <button
+          className="button-border w-1/2 mt-3"
+          onClick={() => {
+            navigate('/about');
+          }}
+        >
+          Learn more
+        </button>
       </div>
       <div className="flex-1 flex items-center justify-center ">
         <img src={AboutImage} alt="About illustration" className="w-2/3" />
