@@ -12,12 +12,12 @@ export const About = ({
   return (
     <div
       ref={aboutRef}
-      className="flex flex-row md:flex-row items-center justify-center w-full  h-dvh px-8 py-16 gap-8"
+      className="flex flex-col md:flex-row items-center justify-center w-full h-dvh px-8 py-16 gap-32"
     >
-      <div className="flex-1 flex flex-col items-start justify-center max-w-xl gap-5">
+      <div className="flex-[2] flex flex-col items-start justify-center  gap-5 ">
         <h2 className="mb-2 ">About me</h2>
         <h3 className="mb--4">From studying stars to building software</h3>
-        <p className="text-base leading-relaxed">
+        <p className=" leading-relaxed">
           I apply the analytical thinking and problem-solving skills I developed
           in astronomy to create innovative digital solutions as a full stack
           developer.
@@ -39,8 +39,8 @@ export const About = ({
           Learn more
         </button>
       </div>
-      <div className="flex-1 flex items-center justify-center ">
-        <img src={AboutImage} alt="About illustration" className="w-2/3" />
+      <div className="flex-1 flex items-center justify-center  max-w-1/3">
+        <img src={AboutImage} alt="About illustration" className="w-2/3 " />
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import App from './App.tsx';
 
 import './index.css';
 import { AboutPage } from './pages/about/aboutPage.tsx';
+import { WorkPage } from './pages/work/workPage.tsx';
+import { ContactPage } from './pages/contact/contactPage.tsx';
 
 const root = document.getElementById('root');
 if (root) {
@@ -13,7 +15,9 @@ if (root) {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<AboutPage />} />
-      </Routes>{' '}
+        <Route path="/work" element={<WorkPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
     </BrowserRouter>
   );
 } else {

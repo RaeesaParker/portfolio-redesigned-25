@@ -13,6 +13,7 @@
   --color-blue-600: #3b82f6;
   --color-blue-700: #2563eb;
   --color-blue-800: #1d4ed8;
+  --color-blue-850: #0c1b4d;
   --color-blue-900: #0d1b2a; /* deep navy */
 
   /* Blacks */
@@ -83,7 +84,7 @@
   }
 
   h3 {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
     font-family: var(--font-serif);
     color: var(--color-gold-600);
   }
@@ -94,8 +95,17 @@
 
   p {
     color: var(--color-blue-900);
+    font-size: var(--text-lg);
   }
   .dark p {
+    color: var(--color-blue-100);
+  }
+
+  footer {
+    color: var(--color-blue-900);
+    font-size: var(--text-lg);
+  }
+  .dark footer {
     color: var(--color-blue-100);
   }
 }
