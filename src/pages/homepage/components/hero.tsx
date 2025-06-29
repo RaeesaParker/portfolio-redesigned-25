@@ -28,7 +28,7 @@ export const Hero = ({ onEnterUniverse }: { onEnterUniverse: () => void }) => {
           </p>
         </div>
         <button
-          className="button-border w-1/2 mx-auto mb-14"
+          className="button-border w-1/2 mx-auto mb-28 py-2"
           onClick={onEnterUniverse}
         >
           Enter my Universe

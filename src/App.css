@@ -113,7 +113,6 @@
 button {
   color: var(--color-blue-900);
   transition: transform 0.2s;
-  padding: 5px;
 }
 
 button:hover {

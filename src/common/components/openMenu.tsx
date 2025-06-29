@@ -16,7 +16,7 @@ export const OpenMenu = ({
     <div
       className="
         fixed inset-0 
-        bg-[var(--color-blue-50)] dark:bg-[var(--color-blue-400)]
+        bg-[var(--color-gold-600)] dark:bg-[var(--color-blue-400)]
         flex flex-col
         transition-transform duration-500 ease-in-out
         translate-y-0

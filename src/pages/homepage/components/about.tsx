@@ -31,7 +31,7 @@ export const About = ({
         </p>
 
         <button
-          className="button-border w-1/2 mt-3"
+          className="button-border w-1/2 mt-3 py-2"
           onClick={() => {
             navigate('/about');
           }}
