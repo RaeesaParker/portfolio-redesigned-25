@@ -5,11 +5,11 @@ export const Work = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full h-1/2 px-8 py-16 gap-32  ">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full h-1/2  py-16 gap-32  ">
       <div className="flex items-center justify-center  max-w-1/3">
         <img src={WorkImage} alt="Work illustration" className="w-2/3" />
       </div>
-      <div className="flex flex-col items-start justify-center  gap-5 ">
+      <div className="flex flex-col items-start justify-center  gap-5  ">
         <h2 className="mb-2">My Work</h2>
         <h3 className="mb-4">Building Solutions Across Platforms</h3>
         <p className=" leading-relaxed">

@@ -150,3 +150,17 @@ button:hover {
     box-shadow: 0 2px 2px 1px var(--color-blue-300);
   }
 }
+
+@layer utilities {
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  .animate-slideDown {
+    animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+}

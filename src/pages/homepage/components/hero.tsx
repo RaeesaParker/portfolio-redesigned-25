@@ -1,6 +1,6 @@
 export const Hero = ({ onEnterUniverse }: { onEnterUniverse: () => void }) => {
   return (
-    <div className="flex justify-center align-middle text-center h-dvh">
+    <div className="flex justify-center align-middle text-center h-dvh ">
       <div className="flex flex-col justify-between w-1/2">
         <div className="flex flex-col justify-center align-middle gap-4 my-auto">
           <h1>Hello, I'm Raeesa</h1>
@@ -28,7 +28,7 @@ export const Hero = ({ onEnterUniverse }: { onEnterUniverse: () => void }) => {
           </p>
         </div>
         <button
-          className="button-border w-1/2 mx-auto mb-12"
+          className="button-border w-1/2 mx-auto mb-14"
           onClick={onEnterUniverse}
         >
           Enter my Universe

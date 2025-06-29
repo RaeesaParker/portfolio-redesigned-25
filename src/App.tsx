@@ -1,12 +1,13 @@
-import { Hero } from './pages/homepage/components/hero';
 import { useRef } from 'react';
 
-import './App.css';
-import { ColourSwitcher } from './common/colourSwitcher';
-import { About } from './pages/homepage/components/about';
-import { Work } from './pages/homepage/components/work';
-import { Contact } from './pages/homepage/components/contact';
 import { Footer } from './common/footer';
+import { Header } from './common/header';
+import { About } from './pages/homepage/components/about';
+import { Contact } from './pages/homepage/components/contact';
+import { Hero } from './pages/homepage/components/hero';
+import { Work } from './pages/homepage/components/work';
+
+import './App.css';
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -19,8 +20,8 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col pr-16 pl-16">
-        <ColourSwitcher />
+      <div className="flex flex-col px-24">
+        <Header />
         <Hero onEnterUniverse={scrollToAbout} />
         <About aboutRef={aboutRef} />
         <Work />

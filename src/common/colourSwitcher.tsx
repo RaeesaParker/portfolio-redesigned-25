@@ -16,7 +16,6 @@ export function ColourSwitcher() {
       onClick={() => setIsDark(!isDark)}
       aria-label="Toggle dark/light mode"
       className={`
-        fixed top-4 right-4 z-50
         inline-flex items-center gap-1
         button-border
         rounded-full p-1 backdrop-blur-sm

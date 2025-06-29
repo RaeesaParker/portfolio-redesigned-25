@@ -1,13 +1,9 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { ColourSwitcher } from '../../common/colourSwitcher';
-
 export const ContactPage = () => {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-[var(--color-blue-50)] dark:bg-[var(--color-blue-900)] px-4 py-12">
-      <ColourSwitcher />
-
       <div className="w-full max-w-2xl bg-white dark:bg-[var(--color-blue-850)] rounded-xl shadow-lg p-8 flex flex-col gap-8">
         <div>
           <h2 className="text-3xl font-bold text-[var(--color-blue-700)] dark:text-[var(--color-blue-100)] mb-2">

@@ -12,7 +12,7 @@ export const About = ({
   return (
     <div
       ref={aboutRef}
-      className="flex flex-col md:flex-row items-center justify-center w-full h-dvh px-8 py-16 gap-32"
+      className="flex flex-col md:flex-row items-center justify-center w-full h-dvh  gap-32 "
     >
       <div className="flex-[2] flex flex-col items-start justify-center  gap-5 ">
         <h2 className="mb-2 ">About me</h2>
