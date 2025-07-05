@@ -24,7 +24,7 @@ export const About = ({
         </p>
         <p>
           I'm currently part of the{' '}
-          <span className="text-[var(--color-blue-600)] ">
+          <span className="text-[var(--color-blue-500)] ">
             Innovation Team at Lancaster University,
           </span>{' '}
           building all sorts of wonderful things across web, mobile, AR, and VR.

@@ -176,4 +176,41 @@ button:hover {
   .animate-slideDown {
     animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
+  .aurora-bg {
+    background: linear-gradient(
+      120deg,
+      var(--color-blue-100),
+      var(--color-blue-300),
+      var(--color-gold-100),
+      var(--color-blue-100)
+    );
+    background-size: 400% 400%;
+    animation: auroraMotion 15s ease infinite;
+    transition: background 0.5s ease;
+  }
+
+  .dark .aurora-bg {
+    background: linear-gradient(
+      120deg,
+      var(--color-blue-900),
+      var(--color-blue-800),
+      #4f46e5, /* Indigo-like accent */
+      #7c3aed, /* Subtle violet/purple tone */
+      var(--color-blue-850),
+      var(--color-blue-900)
+    );
+    background-size: 400% 400%;
+  }
+
+  @keyframes auroraMotion {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }

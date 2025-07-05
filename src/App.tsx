@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { Footer } from './common/footer';
 import { Header } from './common/header';
 import { About } from './pages/homepage/components/about';
-import { Contact } from './pages/homepage/components/contact';
+import { Contact } from './common/components/contact';
 import { Hero } from './pages/homepage/components/hero';
 import { Work } from './pages/homepage/components/work';
 
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col px-24">
+      <div className="flex flex-col px-24 aurora-bg">
         <Header />
         <Hero onEnterUniverse={scrollToAbout} />
         <About aboutRef={aboutRef} />
